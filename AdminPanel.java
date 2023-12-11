@@ -289,7 +289,7 @@ public class AdminPanel
 		for (UserGroup group : UserGroup.getCreatedGroups()) {
 			String currentID = group.getName();
 			for (UserGroup otherGroup : UserGroup.getCreatedGroups()) {
-				if (currentID == otherGroup.getName()) {
+				if (currentID.equals(otherGroup.getName())) {
 					copyCount++;
 				}
 			}
